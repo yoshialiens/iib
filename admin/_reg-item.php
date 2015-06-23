@@ -132,22 +132,21 @@
 
 <h2>アイテム名（商品/企業）の登録/編集</h2>
 
+<!--
 <div class="MenuBtns">
 <ul>
 <li><a href="icon/" target="_blank">アイコン一覧はこちら</a></li>
 </ul>
 </div>
-
+-->
 
 <form method="post" action="reg-item.php?id=<?php echo $item_id; ?>" enctype="multipart/form-data" id="frmReg">
 
-<p>大カテゴリーを選択してください。</p>
 <table class="Reg">
 <tr>
 <th>大カテゴリー名</th>
 <td>
-<select name="division_id" onchange="load_category(this.value,0);">
-<option value="0">未設定</option>
+<select name="division_id" onchange="load_category(this.value,1);">
 <?php foreach($division_all as $v){ ?>
 <option value="<?php echo $v['division_id']; ?>" <?php if(@$item['division_id']==$v['division_id'])echo 'selected="selected"' ?>><?php echo $v['name']; ?></option>
 <?php } ?>
@@ -156,11 +155,18 @@
 </tr>
 </table>
 
-<p>ジャンルを選択してください。</p>
+<p>カテゴリを選択してください。</p>
 <table class="Reg">
 <tr>
 <th>ジャンル名</th>
 <td>
+
+<!--<select name="category_id" id="category_id" onchange="load_category(this.value,1);">
+<?php foreach($division_all as $v){ ?>
+<option value="<?php echo $v['category_id']; ?>" <?php if(@$item['category_id']==$v['category_id'])echo 'selected="selected"' ?>><?php echo $v['name']; ?></option>
+<?php } ?>
+</select>
+-->
 <select name="category_id" id="category_id">
 </select>
 </td>
@@ -173,18 +179,35 @@ $(document).ready(function(){
 </script>
 
 
-<p>アイテム名（商品/企業）の詳細を入力してください。</p>
+<p>ブログ記事の詳細を入力してください。</p>
 <table class="Reg">
 <tr>
-<th>アイテム名（商品/企業）名<br />[name]</th>
+<th>記事タイトル<br />[name]</th>
 <td><input type="text" name="name" value="<?php echo @$item['name']; ?>"></td>
 </tr>
 
+<!--
 <tr>
-<th>会社名<br />[company_name]</th>
+<th>ロゴ<br />[photo1]<br /><span style="color:#F19292; font-size:11px;">※画像は縮小されて表示されます。</span></th>
+<td>
+<?php if(!empty($item['photo1'])){ ?>
+<p><?php echo $server_url.@$item['photo1']; ?></p>
+<input type="hidden" name="old_photo1" value="<?php echo @$item['photo1']; ?>">
+<p><img src="../<?php echo @$item['photo1']; ?>" /></p>
+<?php }?>
+<input type="file" name="photo1" id="img1">
+<p id="thum1"></p>
+</td>
+</tr>
+-->
+
+
+<tr>
+<th>会社名(筆者名に変更)<br />[company_name]</th>
 <td><input type="text" name="company_name" value="<?php echo @$item['company_name']; ?>"></td>
 </tr>
 
+<!--
 <tr>
 <th>表示用のURL<br />[url]</th>
 <td><input type="text" name="url" value="<?php echo @$item['url']; ?>"></td>
@@ -194,6 +217,7 @@ $(document).ready(function(){
 <th>転送用のURL<br />[myurl]</th>
 <td><input type="text" name="myurl" value="<?php echo @$item['myurl']; ?>"></td>
 </tr>
+-->
 
 <tr>
 <th>titleタグ<br />[title]</th>
@@ -209,30 +233,32 @@ $(document).ready(function(){
 <th>h1タグ<br />[h1]</th>
 <td><input type="text" name="h1" value="<?php echo @$item['h1']; ?>"></td>
 </tr>
-
+<!--
 <tr>
 <th>h2タグ<br />[h2]</th>
 <td><input type="text" name="h2" value="<?php echo @$item['h2']; ?>"></td>
 </tr>
-
+-->
 <tr>
-<th>rankプロフィール<br />[rank_info]</th>
+<th>TOP/一覧ページの抜粋<br />[rank_info]</th>
 <td><textarea class="S01" name="rank_info"><?php echo @$item['rank_info']; ?></textarea></td>
 </tr>
-
+<!--
 <tr>
 <th>fieldプロフィール<br />[field_info]</th>
 <td><textarea class="S01" name="field_info"><?php echo @$item['field_info']; ?></textarea></td>
 </tr>
-
+-->
+<!--
 <tr>
 <th>バナー用<br />[banner]</th>
 <td><input type="text" name="banner" value="<?php echo @$item['banner']; ?>"></td>
 </tr>
+-->
 
 <tr>
-<th>ロゴ<br />[photo1]<br /><span style="color:#F19292; font-size:11px;">※画像は縮小されて表示されます。</span></th>
-<td>
+<th>サイトのキャプチャー画像<br />[photo1]<br /><span style="color:#F19292; font-size:11px;">※画像は縮小されて表示されます。</span></th>
+<td class="photoblock">
 <?php if(!empty($item['photo1'])){ ?>
 <p><?php echo $server_url.@$item['photo1']; ?></p>
 <input type="hidden" name="old_photo1" value="<?php echo @$item['photo1']; ?>">
@@ -244,37 +270,29 @@ $(document).ready(function(){
 </tr>
 
 <tr>
-<th>サイトのキャプチャー画像<br />[photo2]<br /><span style="color:#F19292; font-size:11px;">※画像は縮小されて表示されます。</span></th>
-<td>
-<?php if(!empty($item['photo2'])){ ?>
-<p><?php echo $server_url.@$item['photo2']; ?></p>
-<input type="hidden" name="old_photo2" value="<?php echo @$item['photo2']; ?>">
-<p><img src="../<?php echo @$item['photo2']; ?>" /></p>
-<?php }?>
-<input type="file" name="photo2" id="img2">
-<p id="thum2"></p>
-</td>
-</tr>
-
-<tr>
-<th>ABOUT<br />[about]</th>
+<th>記事本文<br />[about]</th>
 <td><textarea class="S07" name="about"><?php echo @$item['about']; ?></textarea></td>
 </tr>
 
+<!--
 <tr>
 <th>reputation用プロフィール<br />[prof]</th>
 <td><textarea class="S07" name="prof"><?php echo @$item['prof']; ?></textarea></td>
 </tr>
-
 <tr>
 <th>予備<br />[prof2]</th>
 <td><textarea class="S01" name="prof2"><?php echo @$item['prof2']; ?></textarea></td>
 </tr>
+-->
+
+<tr>
+<th>プロフ用画像<!--<?php echo $i; ?>--><br />[manual_image]<br /><span style="color:#F19292; font-size:11px;">※最大7枚まで設定可能。</span></th>
+<td class="photoblock">
+
 
 <?php for($i=1;$i<=6;++$i){ ?>
-<tr>
-<th>プロフ用画像<?php echo $i; ?><br />[manual_image<?php echo $i; ?>]<br /><span style="color:#F19292; font-size:11px;">※画像は縮小されて表示されます。</span></th>
-<td>
+
+
 <?php if(!empty($item['manual_image'.$i])){ ?>
 <p><?php echo $server_url.@$item['manual_image'.$i]; ?></p>
 <input type="hidden" name="old_manual_image<?php echo $i; ?>" value="<?php echo @$item['manual_image'.$i]; ?>">
@@ -282,14 +300,16 @@ $(document).ready(function(){
 <?php }?>
 <input type="file" name="<?php echo 'manual_image'.$i; ?>" id="img1<?php echo $i; ?>">
 <p id="thum1<?php echo $i; ?>"></p>
+<?php } ?>
 </td>
 </tr>
-<?php } ?>
 
-<tr>
+
+<!--<tr>
 <th>Point<br />int(11)</th>
 <td><input type="text" name="point" value="<?php echo @$item['point']; ?>"></td>
 </tr>
+-->
 </table>
 </form>
 

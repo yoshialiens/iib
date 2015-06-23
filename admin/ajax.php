@@ -1,6 +1,7 @@
 <?php 
 require_once dirname(__FILE__) . '/../scripts/Session.class.php';
 require_once dirname(__FILE__) . '/../scripts/model/CategoryModel.class.php';
+require_once dirname(__FILE__) . '/../scripts/model/AuthorModel.class.php';
 require_once dirname(__FILE__) . '/../scripts/model/DivisionModel.class.php';
 require_once dirname(__FILE__) . '/../scripts/model/ItemModel.class.php';
 require_once dirname(__FILE__) . '/../scripts/model/ReviewModel.class.php';
@@ -14,6 +15,7 @@ if($admin === false){
 
 $division_model = new DivisionModel();
 $category_model = new CategoryModel();
+$author_model = new AuthorModel();
 $item_model = new ItemModel();
 $review_model = new ReviewModel();
 
@@ -28,6 +30,18 @@ if(isset($_GET['type']) && $_GET['type']=='category'){
 		if($category_id == $v['category_id'])$selected = ' selected="selected"';
 		$name = htmlspecialchars(@$v['name'], ENT_QUOTES, 'UTF-8');
 		echo '<option value="'.$v['category_id'].'"'.$selected.'>'.$name.'</option>'."\n";
+	}
+}elseif(isset($_GET['type']) && $_GET['type']=='author'){
+	$division_id = (int)$_GET['division_id'];
+	$author_id = (int)$_GET['author_id'];
+	$author_all = $author_model->select(array('division_id'=>$division_id));
+	echo '<option value="0">未設定</option>'."\n";
+	foreach($author_all as $v)
+	{
+		$selected = '';
+		if($author_id == $v['author_id'])$selected = ' selected="selected"';
+		$name = htmlspecialchars(@$v['name'], ENT_QUOTES, 'UTF-8');
+		echo '<option value="'.$v['author_id'].'"'.$selected.'>'.$name.'</option>'."\n";
 	}
 }elseif(isset($_GET['type']) && $_GET['type']=='item'){
 	$category_id = (int)$_GET['category_id'];

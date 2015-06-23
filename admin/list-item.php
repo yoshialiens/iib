@@ -16,6 +16,8 @@
 	
 	$filter = $session->get('filter');
 	$category_id = (int)@$filter['category_id'];
+	
+	//更新時
 	if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		$filter['category_id'] = (int)@$_POST['category_id'];
@@ -26,7 +28,7 @@
 	}
 	
 	$item_model = new ItemModel();
-	
+	//削除時
 	if(isset($_GET['del']))
 	{
 		$item_id = (int)@$_GET['id'];
@@ -85,9 +87,9 @@
 
 <div class="Cnt">
 
-<h2>アイテム（商品/企業）</h2>
+<h2>記事登録</h2>
 
-<p class="EntBtn"><a href="reg-item.php">アイテム名（商品/企業）の登録 &gt;</a></p>
+<p class="EntBtn"><a href="reg-item.php">記事の登録 &gt;</a></p>
 
 <table class="List">
 <tr>
@@ -119,10 +121,10 @@
 
 <table class="List">
 <tr>
-<th class="Date"><a href="#">登録/更新日</a></th>
-<th class="BigName">大カテゴリー名</th>
-<th class="MidName">ジャンル名</th>
-<th class="MidName">アイテム名（商品/企業）名</th>
+<th class="Date"><a href="#">登録日</a></th>
+<th class="MidName">カテゴリ</th>
+<th class="MidName">記事タイトル</th>
+<th class="AuthorName">ライター</th>
 <th class="item_id">item_id</th>
 <th class="btArea">編集</th>
 <th class="btArea">削除</th>
@@ -130,10 +132,10 @@
 
 <?php foreach($item_all as $v){ ?>
 <tr>
-<td><?php echo $v['update_time']; ?></td>
-<td><?php echo $v['division_name']; ?></td>
+<td><?php echo $v['date']; ?></td>
 <td><?php echo $v['category_name']; ?></td>
 <td><?php echo $v['name']; ?></td>
+<td><?php echo $v['author_name']; ?></td>
 <td><?php echo $v['item_id']; ?></td>
 <td><p class="btn"><a href="reg-item.php?id=<?php echo $v['item_id']; ?>">編集</a></p></td>
 <td><p class="btn"><a href="javascript:onDelete(<?php echo $v['item_id']; ?>);">削除</a></p></td>

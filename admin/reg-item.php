@@ -27,6 +27,7 @@
 		$data = array(
 			'division_id' => @$_POST['division_id'],
 			'category_id' => @$_POST['category_id'],
+			'author_id' => @$_POST['author_id'],
 			'name'        => @$_POST['name'],
 			'company_name'=> @$_POST['company_name'],
 			'url'         => @$_POST['url'],
@@ -130,7 +131,7 @@
 
 <div class="Cnt">
 
-<h2>アイテム名（商品/企業）の登録/編集</h2>
+<h2>ブログ記事の登録/編集</h2>
 
 <!--
 <div class="MenuBtns">
@@ -155,10 +156,10 @@
 </tr>
 </table>
 
-<p>カテゴリを選択してください。</p>
+<p>カテゴリ・ライターを選択してください。</p>
 <table class="Reg">
 <tr>
-<th>ジャンル名</th>
+<th>カテゴリ名</th>
 <td>
 
 <!--<select name="category_id" id="category_id" onchange="load_category(this.value,1);">
@@ -171,12 +172,32 @@
 </select>
 </td>
 </tr>
-</table>
 <script>
 $(document).ready(function(){
 	load_category(<?php echo (int)@$item['division_id']; ?>, <?php echo (int)@$item['category_id']; ?>);
 });
 </script>
+
+<tr>
+<th>ライター名</th>
+<td>
+<!--<select name="category_id" id="category_id" onchange="load_category(this.value,1);">
+<?php foreach($division_all as $v){ ?>
+<option value="<?php echo $v['category_id']; ?>" <?php if(@$item['category_id']==$v['category_id'])echo 'selected="selected"' ?>><?php echo $v['name']; ?></option>
+<?php } ?>
+</select>
+-->
+<select name="author_id" id="author_id">
+</select>
+</td>
+</tr>
+<script>
+$(document).ready(function(){
+	load_author(<?php echo (int)@$item['division_id']; ?>, <?php echo (int)@$item['author_id']; ?>);
+});
+</script>
+
+</table>
 
 
 <p>ブログ記事の詳細を入力してください。</p>
@@ -201,11 +222,12 @@ $(document).ready(function(){
 </tr>
 -->
 
-
+<!--
 <tr>
 <th>会社名(筆者名に変更)<br />[company_name]</th>
 <td><input type="text" name="company_name" value="<?php echo @$item['company_name']; ?>"></td>
 </tr>
+-->
 
 <!--
 <tr>
@@ -356,6 +378,17 @@ function load_category(division_id, category_id)
 		cache: false,
 		success: function(ret){
 			$("#category_id").html(ret);
+		}
+	});
+}
+function load_author(division_id, author_id)
+{
+	$.ajax({
+		url: 'ajax.php?type=author&division_id='+division_id+'&author_id='+author_id,
+		type: 'GET',
+		cache: false,
+		success: function(ret){
+			$("#author_id").html(ret);
 		}
 	});
 }

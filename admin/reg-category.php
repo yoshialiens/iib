@@ -31,7 +31,7 @@
 			//'color'       => @$_POST['color'],
 			//'title'       => @$_POST['title'],
 			'description' => @$_POST['description'],
-			//'h1'          => @$_POST['h1'],
+			'h1'          => @$_POST['h1'],
 			//'h2'          => @$_POST['h2'],
 			//'main_text'   => @$_POST['main_text'],
 		);
@@ -148,6 +148,13 @@
 <td><input type="text" name="title" value="<?php echo $category['title'];?>"></td>
 </tr>
 -->
+
+<tr>
+<th>スラッグ</th>
+<td><input type="text" name="h1" value="<?php echo $category['h1'];?>"></td>
+</tr>
+
+
 <tr>
 <th>meta [description]</th>
 <td><input type="text" name="description" value="<?php echo $category['description'];?>"></td>
