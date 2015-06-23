@@ -1,0 +1,9 @@
+form.html のラジオボタンやセレクタはエラー時の戻りページで選択された項目を再度選
+択させるためにURLエンコードした値を入力する必要があります。コマンドラインより
+pgdmailform_tmplenc.pl にて該当部分のURLエンコード・デコードを一括で行えます。
+
+エンコード
+./pgdmailform_tmplenc.pl encode < form.html > form_NEW.html
+
+デコード
+./pgdmailform_tmplenc.pl decode < form.html > form_NEW.html
