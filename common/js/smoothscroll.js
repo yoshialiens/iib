@@ -83,7 +83,7 @@ var ss = {
   
     ss_stepsize = parseInt((desty-cypos)/ss.STEPS);
     ss.INTERVAL =
-setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
+setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',30);
   
     // And stop the actual click happening
     if (window.event) {

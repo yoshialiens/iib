@@ -15,7 +15,7 @@ $ARYconf['templateFolder']		= './template/';
 $ARYconf['templateInput']		= 'entry.html';
 $ARYconf['templateCheck']		= 'reentry.html';
 $ARYconf['templateComplete']	= 'check.html';
-$ARYconf['templateFin']			= 'entry.html';
+$ARYconf['templateFin']			= 'thanks.html';
 
 $ARYconf['FormInput']			= 'form_input.html';
 $ARYconf['FormCheck']			= 'form_check.html';
@@ -30,12 +30,12 @@ $ARYconf['userMainEmail']		= 'f_mail';			//自動返信メールを送信する�
 //本番設定 （送信先メールアドレス、完了画面)
 $ARYconf['hensinMailPP']		= 'takuro@i-i-b.jp';		//本番用通知メールＦｒｏｍアドレス'
 $ARYconf['clientMailPP']		= 'takuro@i-i-b.jp';		//本番用通知メール送信先テスト用
-$ARYconf['jumpUrlFinPP']		= 'entry.html';			//送信完了ページ $ARYconf['templateFin']が空の場合有効
+$ARYconf['jumpUrlFinPP']		= 'thanks.html';			//送信完了ページ $ARYconf['templateFin']が空の場合有効
 
 //メール設定
-$ARYconf['hensinMailSubject']	= '【株式会社いないいないばぁ】全国制覇キャンペーンへのご応募ありがとうございます。';
+$ARYconf['hensinMailSubject']	= '【株式会社いないいないばぁ】日本全国サプライズの旅へのご応募ありがとうございます。';
 $ARYconf['hensinMailTemplate']	= 'hensinMail.dat';
-$ARYconf['clientMailSubject']	= '【株式会社いないいないばぁ】全国制覇キャンペーンへの応募を承りました。';
+$ARYconf['clientMailSubject']	= '【株式会社いないいないばぁ】日本全国サプライズの旅への応募を承りました。';
 $ARYconf['clientMailTemplate']	= 'clientMail.dat';
 
 //表示文言
@@ -46,8 +46,8 @@ $ARYconf['hissu']['f_name']			= '<p class="erorr">担当者様名を入力して
 $ARYconf['hissu']['f_address']			= '<p class="erorr">住所を入力してください。</p>';
 $ARYconf['hissu']['f_why']			= '<p class="erorr">「何のためにビジネスをやっていますか？」を入力してください。</p>';
 $ARYconf['hissu']['f_what']			= '<p class="erorr">「課題としていることは何ですか？」を入力してください。</p>';
-$ARYconf['hissu']['f_change']			= '<p class="erorr">「現状を変える勇気はありますか？」を入力してください。</p>';
-
+$ARYconf['hissu']['f_change']			= '<p class="erorr">「現状を変える勇気はありますか？」をチェックしてください。</p>';
+$ARYconf['hissu']['f_pop']			= '<p class="erorr">「目立つことや脚光を浴びることに抵抗はありませんか？」をチェックしてください。</p>';
 
 $ARYconf['hissu']['f_mail']			= '<p class="erorr">メールアドレスを入力して下さい。</p>';
 $ARYconf['email']['f_mail']			= '<p class="erorr">メールアドレスに使えない文字が入力されていませんか？</p>';

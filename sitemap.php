@@ -119,7 +119,7 @@
 <ul>
 <li><a href="index.php">HOME</a></li>
 <li><a href="company.php">会社概要</a></li>
-<li><a href="activities.php">私たちが提供しているもの</a></li>
+<li><a href="activities.php">サプライズマーケティングとは？</a></li>
 <li><a href="mission.php">理念</a></li>
 <li><a href="campaign201501.php">サプライズマーケティング全国制覇</a></li>
 <!--li><a href="campaign/">全国制覇応募フォーム</a></li-->
