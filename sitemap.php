@@ -39,11 +39,11 @@
 
 	//ソーシャルボタン用
 	$server_name = $_SERVER['SERVER_NAME'];
-	$social_url = urlencode("http://{$server_name}/privacy.php");
-	$url = "http://{$server_name}/privacy.php";
+	$social_url = urlencode("http://{$server_name}/sitemap.php");
+	$url = "http://{$server_name}/sitemap.php";
 ?>
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
@@ -51,10 +51,10 @@
 <meta property="og:site_name" content="株式会社いないいないばぁ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.i-i-b.jp/sitemap.php">
-<meta property="og:image" content="http://www.i-i-b.jp/common/img/page/sitemap.png">
+<meta property="og:image" content="http://www.i-i-b.jp/common/img/common/fb.png">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 <meta name="keywords" content="サイトマップ,サプライズマーケティング">
-<meta name="description" content="日本一のサプライズマーケティング会社である株式会社いないいないばぁのサイトマップページです。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
+<meta name="description" content="日本一のサプライズマーケティング会社、株式会社いないいないばぁのサイトマップです。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
 <title>サイトマップ|株式会社いないいないばぁ</title>
 <link rel="canonical" href="http://www.i-i-b.jp/sitemap.php">
 <link rel="apple-touch-icon-precomposed" href="common/img/home-icon.png" />
@@ -72,20 +72,20 @@
 <div id="wrapper">
 <header id="header">
 <div class="pcView"><!-- /PC MENU -->
-<div class="logo"><a href="http://i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="150" height="40"></a></div>
+<div class="logo"><a href="http://www.i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50"></a></div>
 <div class="h-sec">
 <h1>サイトマップ - 株式会社いないいないばぁ</h1>
 <?php @include 'header-nav.php'; ?>
 </div><!-- /h-sec -->
 <ul class="h-sns">
 <li class="snsBlock"><a href="https://www.facebook.com/inai2bar" target="_blank"><span class="icon-">&#xea8d;</span></a></li>
-<li class="snsBlock"><a href="http://twitter.com/share?text=日本一のサプライズマーケティング会社-株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xea92;</span></a></li>
-<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
+<li class="snsBlock"><a href="http://twitter.com/share?text=サイトマップ|株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/sitemap.php" target="_blank"><span class="icon-">&#xea92;</span></a></li>
+<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/sitemap.php" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
 </ul><!-- /h-sns -->
 </div><!-- /PC MENU -->
 <div class="spView"><!-- SP MENU -->
 <header id="header-sp" class="spView">
-<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="155" height="38" alt="株式会社いないいないばぁ"/></a></p>
+<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="147" height="50" alt="株式会社いないいないばぁ"/></a></p>
 <?php @include 'header-nav-sp.php'; ?>
 </header>
 </div><!-- /SP MENU -->
@@ -118,15 +118,15 @@
 <h3>サイトマップ</h3>
 <ul>
 <li><a href="index.php">HOME</a></li>
-<li><a href="company.php">会社概要</a></li>
 <li><a href="activities.php">サプライズマーケティングとは？</a></li>
-<li><a href="mission.php">理念</a></li>
-<li><a href="campaign201501.php">サプライズマーケティング全国制覇</a></li>
-<!--li><a href="campaign/">全国制覇応募フォーム</a></li-->
+<li><a href="credo.php">クレド</a></li>
+<li><a href="campaign/" target="_blank">日本全国サプライズの旅キャンペーン</a></li>
+<li><a href="form/">応募フォーム</a></li>
 <li><a href="contact/">お問い合わせ</a></li>
+<li><a href="company.php">会社概要</a></li>
 <li><a href="privacy.php">プライバシーポリシー</a></li>
 <li><a href="sitemap.php">サイトマップ</a></li>
-<li><a href="blog.php">活動報告</a></li>
+<li><a href="blog.php">お知らせ</a></li>
 <?php foreach($division_all[1]['category_all'] as $v): ?>
 <li><a href="category.php?category_id=<?php echo $v['category_id']; ?>"><?php echo $v['name']; ?></a></li>
 <?php foreach($item_all[$v['category_id']] as $v): ?>
@@ -142,7 +142,7 @@
 
 
 <?php @include 'more.php'; ?>
-<?php @include 'campaign.php'; ?>
+<?php @include 'campaignSec.php'; ?>
 </div><!-- /main -->
 </div><!-- /contents -->
 <?php @include 'footer.php'; ?>

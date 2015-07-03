@@ -180,7 +180,7 @@
 <li><a href="/" target="_blank">HOME</a></li>
 <li><a href="/company.php" target="_blank">会社概要</a></li>
 <li><a href="/detail01.php" target="_blank">キャンペーン概要</a></li>
-<li><a href="/contact.php" target="_blank">お問い合わせ</a></li>
+<li><a href="/contact/" target="_blank">お問い合わせ</a></li>
 <li><a href="/privacy.php" target="_blank">Privacy Policy</a></li>
 </ul>
 <p>Copyright &copy; <script type="text/javascript">var iNavInt_curYear = new Date().getUTCFullYear(); document.write(iNavInt_curYear);</script> <a href="http://www.i-i-b.jp/">IIB Co.,Ltd.</a> All Rights Reserved.</p>

@@ -133,14 +133,14 @@
 	$url = "http://{$server_name}/article.php?item_id={$item['item_id']}";
 ?>
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
 <meta property="og:title" content="<?php echo $item['title']; ?>|株式会社いないいないばぁ">
 <meta property="og:site_name" content="株式会社いないいないばぁ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.i-i-b.jp/company.php">
+<meta property="og:url" content="http://www.i-i-b.jp/article.php?item_id=<?php echo $item['item_id']; ?>">
 <meta property="og:image" content="http://www.i-i-b.jp/<?php echo $item['photo1']; ?>">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 <meta name="keywords" content="いないいないばぁ,サプライズマーケティング">
@@ -162,20 +162,20 @@
 <div id="wrapper">
 <header id="header">
 <div class="pcView"><!-- /PC MENU -->
-<div class="logo"><a href="http://i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="150" height="40"></a></div>
+<div class="logo"><a href="http://www.i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50"></a></div>
 <div class="h-sec">
 <h1><?php echo $item['name']; ?> - 株式会社いないいないばぁ</h1>
 <?php @include 'header-nav.php'; ?>
 </div><!-- /h-sec -->
 <ul class="h-sns">
 <li class="snsBlock"><a href="https://www.facebook.com/inai2bar" target="_blank"><span class="icon-">&#xea8d;</span></a></li>
-<li class="snsBlock"><a href="http://twitter.com/share?text=日本一のサプライズマーケティング会社-株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xea92;</span></a></li>
-<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
+<li class="snsBlock"><a href="http://twitter.com/share?text=<?php echo $item['title']; ?>|株式会社いないいいないばぁ &amp;url=<?php echo $social_url; ?>" target="_blank"><span class="icon-">&#xea92;</span></a></li>
+<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?<?php echo $social_url; ?>" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
 </ul><!-- /h-sns -->
 </div><!-- /PC MENU -->
 <div class="spView"><!-- SP MENU -->
 <header id="header-sp" class="spView">
-<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="155" height="38" alt="株式会社いないいないばぁ"/></a></p>
+<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="147" height="50" alt="株式会社いないいないばぁ"/></a></p>
 <?php @include 'header-nav-sp.php'; ?>
 </header>
 </div><!-- /SP MENU -->
@@ -197,24 +197,12 @@
 <div class="Block">
 <div class="Cont">
 <article>
-<p class="date"><span class="icon-">&#xe905; </span><?php echo $item['date']; ?></p>
+<p class="date"><span class="icon-">&#xe905; </span><?php echo $item['posted_date']; ?></p>
 <h1 class="title"><?php echo $item['name']; ?></h1>
 <figure class="thumbnail">
-<img src="<?php echo $item['photo1']; ?>" alt="<?php echo $item['name']; ?>" width="800" height="">
+<img src="<?php echo $item['photo1']; ?>" alt="<?php echo $item['name']; ?>" width="800">
 </figure>
 <?php echo $item['about']; ?>
-<!--p>====================</p>
-<div class="boxline">
-<p><?#php if(!empty($item['company_name'])): ?>
-筆者：<?#php echo $item['company_name']; ?>
-<?#php endif; ?></p>
-</div-->
-
-
-<!--h4>h4マーケティングに必須となりうる「ビッグデータ」の価値</h4>
-<p class="blogImg"><img src="common/img/mv/thumbnail01.jpg" alt="mtest"></p>
-<blockquote>3マーケティングに必須となりうる3マーケティングに必須となりうる</blockquote>
-<p>3マーケティングに必須となりうる<a href="#">「ビッグデータ」</a>の価値</p-->
 </article>
 </div><!-- /Cont -->
 </div><!-- Block -->
@@ -249,7 +237,7 @@
 </div><!-- Block -->
 
 <?php @include 'more.php'; ?>
-<?php @include 'campaign.php'; ?>
+<?php @include 'campaignSec.php'; ?>
 
 </div><!-- /main -->
 </div><!-- /contents -->

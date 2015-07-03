@@ -63,7 +63,7 @@
 
 
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
@@ -71,9 +71,9 @@
 <meta property="og:site_name" content="株式会社いないいないばぁ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://www.i-i-b.jp/">
-<meta property="og:image" content="http://www.i-i-b.jp/common/img/page/index.png">
+<meta property="og:image" content="http://www.i-i-b.jp/common/img/common/fb.jpg">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-<meta name="keywords" content="いないいないばぁ,サプライズマーケティング,サプライズコンサルティング">
+<meta name="keywords" content="いないいないばぁ,サプライズマーケティング,サプライズコンサルティング,IIB">
 <meta name="description" content="株式会社いないいないばぁは日本一のサプライズマーケティング会社です。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
 <title>株式会社いないいないばぁ|日本一のサプライズマーケティング</title>
 <link rel="canonical" href="http://www.i-i-b.jp/">
@@ -92,7 +92,7 @@
 <div id="wrapper">
 <header id="header">
 <div class="pcView"><!-- /PC MENU -->
-<div class="logo"><a href="http://i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="150" height="40"></a></div>
+<div class="logo"><a href="http://www.i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50"></a></div>
 <div class="h-sec">
 <h1>日本一のサプライズマーケティング会社 - 株式会社いないいないばぁ</h1>
 <?php @include 'header-nav.php'; ?>
@@ -105,7 +105,7 @@
 </div><!-- /PC MENU -->
 <div class="spView"><!-- SP MENU -->
 <header id="header-sp" class="spView">
-<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="155" height="38" alt="株式会社いないいないばぁ"/></a></p>
+<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="147" height="50" alt="株式会社いないいないばぁ"/></a></p>
 <?php @include 'header-nav-sp.php'; ?>
 </header>
 </div><!-- /SP MENU -->
@@ -116,45 +116,56 @@
 <div class="contents">
 <div id="main">
 <div class="Block MV">
-<div class="mvTxt">
-</div>
+<a href="/campaign/" target="_blank"></a>
 </div><!-- /MV -->
-<div class="Block Blue">
-<div class="Cont">
-<h3>About"IIB"</h3>
-<p class="subTitle">株式会社いないいないばぁはこんな会社です。</p>
-<div class="aboutList">
-<div class="aboutImg f-l"><div class="radius150"><img src="common/img/index/about01.jpg" alt="日本一のサプライズマーケティング会社" width="300" height="300"></div></div>
-<div class="aboutTxt f-r"><h4>株式会社いないいないばぁは<br class="pcView">「日本一のサプライズマーケティング会社」です。</h4>
-<p>私達はサプライズで企業の課題を解決します。人の行動に大きな変化を与え、ファンをつくり、口コミを生み、販売を不要にするのがサプライズマーケティングです。<br class="tabNoView">
-会社にとって大切な「誰か」に驚きを与え、感動を届けるためのサプライズをデザインします。</p></div><!-- /aboutTxt -->
-</div><!-- /aboutList -->
 
-<div class="aboutList">
-<div class="aboutImg f-r"><div class="radius150"><img src="common/img/index/about02.jpg" alt="売上よりも驚きを" width="300" height="300"></div></div>
-<div class="aboutTxt f-l"><h4>売上よりも驚きを</h4>
-<p>私たちは売上を第一に考えない会社です。人の気持ちのど真ん中に響く「驚き」を何よりも大切にします。<br class="tabNoView">
-腕をつかんで無理やり引っ張ることはせず、心に訴えかけるサプライズを届けると、人は自然と集まります。<br class="tabNoView">
-そんなやさしい「驚き」を第一に考えます。</p></div><!-- /aboutTxt -->
-</div><!-- /aboutList -->
-
-<div class="aboutList">
-<div class="aboutImg f-l"><div class="radius150"><img src="common/img/index/about03.jpg" alt="サプライズを企業文化に" width="300" height="300"></div></div>
-<div class="aboutTxt f-r"><h4>サプライズを企業文化に</h4>
-<p>顧客だけでなく、社内の従業員、関わる取引先の企業も含め、誰もが毎日をワクワクしながら過ごせる。そんな企業を増やしていける力がサプライズにはあると信じています。<br class="tabNoView">
-日本の企業文化にサプライズを浸透させ、従来の常識を変えていくことが私たちの理念です。</p></div><!-- /aboutTxt -->
-</div><!-- /aboutList -->
-
-</div><!-- Cont -->
-</div><!-- Block -->
+<div class="Block Black">
+<div cllass="Cont">
+<p class="Label">７月１日〜「日本全国サプライズの旅」キャンペーン中！詳細は画像をクリック！</p>
+</div>
+</div>
 
 <div class="Block White">
 <div class="Cont">
-<h3>ACTIVITY REPORT</h3>
-<p class="subTitle">株式会社いないいないばぁの活動報告</p>
+<div class="mission">
+<p class="missionTitle">「サプライズを企業文化に」</p>
+<div class="Txt">
+<p class="TxtImg">
+<img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50">
+</p>
+<p>早期に見返りを求めること。<br class="pcView">
+売上を重要視すること。<br class="pcView">
+それは大事なものを見えなくさせます。</p>
+
+<p>私たちは売上を第一に考えません。<br class="pcView">
+「売上」ではなく、大切にしたいものは<br class="pcView">
+喜びや感動を生む「サプライズ」を作ること。</p>
+
+<p>サプライズには「感動させる力」「絆を深める力」「人を動かす力」があります。<br class="pcView">
+人の心に訴えかけ、感動を増幅させ、企業に大きな渦を巻き起こします。<br class="pcView">
+顧客だけでなく、社内の従業員、そこに関わる取引先の企業も誰もが毎日を<br class="pcView">
+ワクワクと過ごせるよう、日本の企業文化にサプライズを浸透させていきたい。</p>
+
+<p>サプライズこそが日本の起爆剤になると信じて、<br class="pcView">
+これまでの常識を変えていくことが私たちの理念です。</p>
+
+<p>想いや情熱を持った素晴らしい企業様を１社でも多く増やしていき、<br class="pcView">
+そして世の中を驚かせるビジネスを１つでも多く増やしていくことを目指し、<br class="pcView">
+今日も誰かをやさしく驚かせます。</p>
+
+<p class="missionLast">「いつもビジネスに驚きを」<br>
+株式会社いないいないばぁ</p>
+</div>
+</div><!-- /mission -->
+</div><!-- /Cont -->
+</div><!-- Block -->
+
+
+<div class="Block Blue">
+<div class="Cont">
+<h3>NEWS</h3>
+<p class="subTitle">株式会社いないいないばぁのニュース</p>
 <ul class="blog">
-
-
 <?php foreach($item_all2 as $v2): ?>
 <li>
 <div class="blogImg shake"><div class="blogTag pcView bg<?php echo $v2['category_id']; ?>"><p><?php echo $v2['category_name']; ?></p></div><a href="article.php?item_id=<?php echo $v2['item_id']; ?>"><?php if(!empty($v2['photo1'])){ ?><img src="<?php echo $v2['photo1']; ?>" width="300" height="300" alt="<?php echo $v2['name']; ?>"><?php } ?></a></div>
@@ -163,13 +174,13 @@
 <div class="moreBtn pcView"><a href="article.php?item_id=<?php echo $v2['item_id']; ?>">MORE ＞</a></div>
 </li>
 <?php endforeach; ?>
-
 </ul>
+<div class="blogBtn"><p class="btn02"><a href="blog.php">もっと読む</a></p></div>
 </div><!-- /Cont -->
 </div><!-- Block -->
 
 <?php @include 'more.php'; ?>
-<?php @include 'campaign.php'; ?>
+<?php @include 'campaignSec.php'; ?>
 
 </div><!-- /main -->
 </div><!-- /contents -->

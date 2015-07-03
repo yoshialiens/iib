@@ -39,8 +39,8 @@ CountdownTimer.prototype={
   var me=this;
 
   if( ( this.tl - today ) > 0 ){
-   if (day) timer += '<span class="day">'+day+'</span>';
-   if (hour) timer += '<span class="hour">'+hour+'</span>';
+   if (day) timer += '<span class="day">'+this.addZero(day)+'</span>';
+   if (hour) timer += '<span class="hour">'+this.addZero(hour)+'</span>';
    timer += '<span class="min">'+this.addZero(min)+'</span><span class="sec">'+this.addZero(sec)+'</span>';
    this.elem.innerHTML = timer;
    tid = setTimeout( function(){me.countDown();},10 );

@@ -121,7 +121,7 @@ h2{width:100%;height:117px;margin:60px auto;text-align:center;}
 #Count{overflow:hidden;width:100%;max-width:1200px;height:545px;margin:0 auto;background:url(../img/camp/bgCount02.jpg)no-repeat top center;}
 #Count .countSec{overflow:hidden;width:100%;max-width:1070px;height:217px;margin:160px auto 0;background:url(../img/camp/countBack.png)no-repeat top center;}
 #CDT{width:1050px;height:140px;margin:57px 40px 0 0;font-size:88px;color:#fff;}
-#CDT span.day{margin:0 0 0 120px;}
+#CDT span.day{	margin:0 0 0 120px;}
 #CDT span.hour{margin:0 0 0 180px;}
 #CDT span.min{margin:0 0 0 150px;}
 #CDT span.sec{margin:0 0 0 140px;}
@@ -130,7 +130,7 @@ h2{width:100%;height:117px;margin:60px auto;text-align:center;}
 /* About */
 #About{overflow:hidden;width:100%;max-width:1200px;height:1143px;margin:0 auto;background:url(../img/camp/bgAbout.jpg)no-repeat top center;}
 #About h2{margin-bottom:40px;}
-#About .aboutSec{width:100%;max-width:1111px;height:844px;margin:0 auto;background:url(../img/camp/aboutSec02.png)no-repeat top center;}
+#About .aboutSec{width:100%;max-width:1111px;height:844px;margin:0 auto;}
 
 /* Marketing */
 #Marketing{overflow:hidden;width:100%;max-width:1200px;height:1219px;margin:0 auto;background:url(../img/camp/bgMarket.jpg)no-repeat top center;}
@@ -141,7 +141,7 @@ h2{width:100%;height:117px;margin:60px auto;text-align:center;}
 
 /* Commit */
 #Commit{overflow:hidden;width:100%;max-width:1200px;height:758px;margin:0 auto;background:url(../img/camp/bgCom.jpg)no-repeat top center;}
-#Commit h2{margin-bottom:80px;}
+#Commit h2{margin-bottom:60px;}
 #Commit .commitSec{width:100%;max-width:800px;height:auto;margin:0 auto;text-align:center;}
 #Commit .commitSec p{margin-bottom:40px;font-size:26px;color:#000;}
 
@@ -165,8 +165,9 @@ h2{width:100%;height:117px;margin:60px auto;text-align:center;}
 #Offer p.btn{text-align:center;}
 #Offer p.btn a{display:block;width:930px;height:160px;margin:0 auto;background:url(../img/camp/btnOffer-hv.png)no-repeat right bottom;}
 #Offer p.btn img{width:100%;height:auto;}
+#Offer p.detail{text-align:center;font-size:20px;margin:20px auto;}
 
-#Offer .toTop{width:100%;height:auto;margin:160px auto 40px;text-align:center;}
+#Offer .toTop{width:100%;height:auto;margin:110px auto 40px;text-align:center;}
 #Offer .toTop a{display:block;width:174px;height:205px;margin:0 auto;background:url(../img/camp/toTop-hv.png)no-repeat right bottom;}
 #Offer .toTop img{width:100%;height:auto;}
 
@@ -219,13 +220,14 @@ nav ul li img{width:380px;height:247px;}
 
 #Offer{overflow:hidden;width:100%;max-width:1200px;height:auto;margin:0 auto;background:url(../img/camp/bgOffer.jpg) #231816 no-repeat top center;}
 
+#Offer p.detail{font-size:36px;}
+#Offer .toTop{margin:94px auto 40px;}
 #Footer{margin:40px auto 0;}
 #Footer p{font-size:36px;margin-bottom:20px;}
 #Footer ul{margin:0 auto 40px;}
 #Footer ul li{font-size:36px;}
 #Footer ul li:before{padding:0 8px;}
-#Footer ul li.last:after{padding-left:8px;}
-
+#Footer ul li.last-child:after{padding-left:8px;}
 }
 
 

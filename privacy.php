@@ -11,7 +11,7 @@
 	$url = "http://{$server_name}/privacy.php";
 ?>
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
@@ -19,10 +19,10 @@
 <meta property="og:site_name" content="株式会社いないいないばぁ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.i-i-b.jp/privacy.php">
-<meta property="og:image" content="http://www.i-i-b.jp/common/img/page/privacy.png">
+<meta property="og:image" content="http://www.i-i-b.jp/common/img/common/fb.png">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 <meta name="keywords" content="プライバシーポリシー,サプライズマーケティング">
-<meta name="description" content="日本一のサプライズマーケティング会社である株式会社いないいないばぁのプライバシーポリシーページです。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
+<meta name="description" content="日本一のサプライズマーケティング会社、株式会社いないいないばぁのプライバシーポリシーです。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
 <title>プライバシーポリシー|株式会社いないいないばぁ</title>
 <link rel="canonical" href="http://www.i-i-b.jp/privacy.php">
 <link rel="apple-touch-icon-precomposed" href="common/img/home-icon.png" />
@@ -40,20 +40,20 @@
 <div id="wrapper">
 <header id="header">
 <div class="pcView"><!-- /PC MENU -->
-<div class="logo"><a href="http://i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="150" height="40"></a></div>
+<div class="logo"><a href="http://www.i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50"></a></div>
 <div class="h-sec">
 <h1>プライバシーポリシー - 株式会社いないいないばぁ</h1>
 <?php @include 'header-nav.php'; ?>
 </div><!-- /h-sec -->
 <ul class="h-sns">
 <li class="snsBlock"><a href="https://www.facebook.com/inai2bar" target="_blank"><span class="icon-">&#xea8d;</span></a></li>
-<li class="snsBlock"><a href="http://twitter.com/share?text=日本一のサプライズマーケティング会社-株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xea92;</span></a></li>
-<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
+<li class="snsBlock"><a href="http://twitter.com/share?text=プライバシーポリシー|株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/privacy.php" target="_blank"><span class="icon-">&#xea92;</span></a></li>
+<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/privacy.php" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
 </ul><!-- /h-sns -->
 </div><!-- /PC MENU -->
 <div class="spView"><!-- SP MENU -->
 <header id="header-sp" class="spView">
-<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="155" height="38" alt="株式会社いないいないばぁ"/></a></p>
+<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="147" height="50" alt="株式会社いないいないばぁ"/></a></p>
 <?php @include 'header-nav-sp.php'; ?>
 </header>
 </div><!-- /SP MENU -->
@@ -127,7 +127,7 @@
 </div><!-- Block -->
 
 <?php @include 'more.php'; ?>
-<?php @include 'campaign.php'; ?>
+<?php @include 'campaignSec.php'; ?>
 </div><!-- /main -->
 </div><!-- /contents -->
 <?php @include 'footer.php'; ?>

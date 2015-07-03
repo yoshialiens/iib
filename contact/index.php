@@ -15,7 +15,7 @@ $ARYconf['templateFolder']		= './template/';
 $ARYconf['templateInput']		= 'entry.html';
 $ARYconf['templateCheck']		= 'reentry.html';
 $ARYconf['templateComplete']	= 'check.html';
-$ARYconf['templateFin']			= 'entry.html';
+$ARYconf['templateFin']			= 'thanks.html';
 
 $ARYconf['FormInput']			= 'form_input.html';
 $ARYconf['FormCheck']			= 'form_check.html';
@@ -28,9 +28,9 @@ $ARYconf['isEqaul']['for']		= 'f_mail';			//特殊拡張isEqaulと比較する�
 $ARYconf['userMainEmail']		= 'f_mail';			//自動返信メールを送信する先のＥ－ｍａｉｌを入力させるフォーム名
 
 //本番設定 （送信先メールアドレス、完了画面)
-$ARYconf['hensinMailPP']		= 'takuro@i-i-b.jp';		//本番用通知メールＦｒｏｍアドレス'
-$ARYconf['clientMailPP']		= 'takuro@i-i-b.jp';		//本番用通知メール送信先テスト用
-$ARYconf['jumpUrlFinPP']		= 'entry.html';			//送信完了ページ $ARYconf['templateFin']が空の場合有効
+$ARYconf['hensinMailPP']		= 'info@i-i-b.jp,';		//本番用通知メールＦｒｏｍアドレス
+$ARYconf['clientMailPP']		= 'info@i-i-b.jp,shinsuke@i-i-b.jp,yasuto@i-i-b.jp';		//本番用通知メール送信先
+$ARYconf['jumpUrlFinPP']		= 'thanks.html';			//送信完了ページ $ARYconf['templateFin']が空の場合有効
 
 //メール設定
 $ARYconf['hensinMailSubject']	= '【株式会社いないいないばぁ】オフィシャルサイトへお問い合わせありがとうございます。';

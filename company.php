@@ -11,7 +11,7 @@
 	$url = "http://{$server_name}/company.php";
 ?>
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
@@ -19,10 +19,10 @@
 <meta property="og:site_name" content="株式会社いないいないばぁ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.i-i-b.jp/company.php">
-<meta property="og:image" content="http://www.i-i-b.jp/common/img/page/○○.png">
+<meta property="og:image" content="http://www.i-i-b.jp/common/img/common/fb.png">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-<meta name="keywords" content="会社概要,サプライズマーケティング">
-<meta name="description" content="日本一のサプライズマーケティング会社である株式会社いないいないばぁの会社概要ページです。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
+<meta name="keywords" content="会社概要,サプライズマーケティング,いないいないばぁ">
+<meta name="description" content="日本一のサプライズマーケティング会社、株式会社いないいないばぁの会社概要ページです。企業情報やメンバー紹介など、株式会社いないいないばぁに関してはこちらのページをごらんください。">
 <title>会社概要|株式会社いないいないばぁ</title>
 <link rel="canonical" href="http://www.i-i-b.jp/company.php">
 <link rel="apple-touch-icon-precomposed" href="common/img/home-icon.png" />
@@ -40,20 +40,20 @@
 <div id="wrapper">
 <header id="header">
 <div class="pcView"><!-- /PC MENU -->
-<div class="logo"><a href="http://i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="150" height="40"></a></div>
+<div class="logo"><a href="http://www.i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50"></a></div>
 <div class="h-sec">
 <h1>会社概要 - 株式会社いないいないばぁ</h1>
 <?php @include 'header-nav.php'; ?>
 </div><!-- /h-sec -->
 <ul class="h-sns">
 <li class="snsBlock"><a href="https://www.facebook.com/inai2bar" target="_blank"><span class="icon-">&#xea8d;</span></a></li>
-<li class="snsBlock"><a href="http://twitter.com/share?text=日本一のサプライズマーケティング会社-株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xea92;</span></a></li>
-<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
+<li class="snsBlock"><a href="http://twitter.com/share?text=会社概要|株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/company.php" target="_blank"><span class="icon-">&#xea92;</span></a></li>
+<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/company.php" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
 </ul><!-- /h-sns -->
 </div><!-- /PC MENU -->
 <div class="spView"><!-- SP MENU -->
 <header id="header-sp" class="spView">
-<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="155" height="38" alt="株式会社いないいないばぁ"/></a></p>
+<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="147" height="50" alt="株式会社いないいないばぁ"/></a></p>
 <?php @include 'header-nav-sp.php'; ?>
 </header>
 </div><!-- /SP MENU -->
@@ -141,7 +141,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/takenari.png" alt="柴田剛成" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/kuni.png" alt="柴田剛成" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/takenari2.png" alt="柴田剛成" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">柴田 剛成</div>
 <div class="memberSub">Takenari Shibata</div>
@@ -151,7 +151,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/kuni.png" alt="中村州宏" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/koiken.png" alt="中村州宏" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/kuni2.png" alt="中村州宏" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">中村 州宏</div>
 <div class="memberSub">Kunihiro Nakamura</div>
@@ -161,7 +161,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/koiken.png" alt="小泉憲一" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/yoshitaku.png" alt="小泉憲一" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/koiken2.png" alt="小泉憲一" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">小泉 憲一</div>
 <div class="memberSub">Kenichi Koizumi</div>
@@ -171,7 +171,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/yoshitaku.png" alt="吉見拓朗" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/denden.png" alt="吉見拓朗" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/yoshitaku2.png" alt="吉見拓朗" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">吉見 拓朗</div>
 <div class="memberSub">Takuro Yoshimi</div>
@@ -181,7 +181,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/denden.png" alt="田中優輝" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/hiroto.png" alt="田中優輝" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/denden2.png" alt="田中優輝" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">田中 優輝</div>
 <div class="memberSub">Yuuki Tanaka</div>
@@ -190,8 +190,8 @@ Operation Blessing Japan<br>
 </li>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
-<div class="front"><img src="common/img/member/hiroto.png" alt="土持和" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/shinnosuke.png" alt="土持和" width="300" height="300"></div>
+<div class="front"><img src="common/img/member/tsuchi.png" alt="土持和" width="300" height="300"></a></div>
+<div class="back"><img src="common/img/member/tsuchi2.png" alt="土持和" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">土持 和</div>
 <div class="memberSub">Wataru Tsuchimochi</div>
@@ -200,10 +200,10 @@ Operation Blessing Japan<br>
 </li>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
-<div class="front"><img src="common/img/member/shinnosuke.png" alt="斎川真輔" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/yasuto.png" alt="斎川真輔" width="300" height="300"></div>
+<div class="front"><img src="common/img/member/shinnosuke.png" alt="齊川真輔" width="300" height="300"></a></div>
+<div class="back"><img src="common/img/member/shinnosuke2.png" alt="齊川真輔" width="300" height="300"></div>
 </div></div>
-<div class="memberTitle">斎川 真輔</div>
+<div class="memberTitle">齊川 真輔</div>
 <div class="memberSub">Shinsuke Saikawa</div>
 <div class="memberEx"><p>マーケティングチーム / クマ<br>くま。</p></div>
 <!--<div class="memberEx"><p>株式会社いないいないばぁの忍び。<br>WEB解析士、FP、マーケティングといじられ役を担当。</p></div>-->
@@ -211,7 +211,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/yasuto.png" alt="平井靖人" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/naoki.png" alt="平井靖人" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/yasuto2.png" alt="平井靖人" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">平井 靖人</div>
 <div class="memberSub">Yasuto Hirai</div>
@@ -221,7 +221,7 @@ Operation Blessing Japan<br>
 <li>
 <div class="memberImg" ontouchstart="this.classList.toggle('hover');"><div class="flipper">
 <div class="front"><img src="common/img/member/naoki.png" alt="松永直樹" width="300" height="300"></a></div>
-<div class="back"><img src="common/img/member/takenari.png" alt="松永直樹" width="300" height="300"></div>
+<div class="back"><img src="common/img/member/naoki2.png" alt="松永直樹" width="300" height="300"></div>
 </div></div>
 <div class="memberTitle">松永 直樹</div>
 <div class="memberSub">Naoki Matsunaga</div>
@@ -233,7 +233,7 @@ Operation Blessing Japan<br>
 </div><!-- Block -->
 
 <?php @include 'more.php'; ?>
-<?php @include 'campaign.php'; ?>
+<?php @include 'campaignSec.php'; ?>
 
 </div><!-- /main -->
 </div><!-- /contents -->

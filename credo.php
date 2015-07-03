@@ -11,20 +11,20 @@
 	$url = "http://{$server_name}/credo.php";
 ?>
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-<meta property="og:title" content="いないいないばぁの会社概要">
+<meta property="og:title" content="いないいないばぁのクレド">
 <meta property="og:site_name" content="株式会社いないいないばぁ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.i-i-b.jp/company.php">
-<meta property="og:image" content="http://www.i-i-b.jp/common/img/page/○○.png">
+<meta property="og:url" content="http://www.i-i-b.jp/credo.php">
+<meta property="og:image" content="http://www.i-i-b.jp/common/img/common/fb.png">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-<meta name="keywords" content="会社概要,サプライズマーケティング">
-<meta name="description" content="株式会社いないいないばぁは日本一のサプライズマーケティング会社です。口コミやリピートを増やすためにサプライズを提案し、人々に喜んでもらうために動いてもらいます。">
-<title>いないいないばぁ行動指針|株式会社いないいないばぁ</title>
+<meta name="keywords" content="クレド,行動指針,サプライズマーケティング,いないいないばぁ">
+<meta name="description" content="日本一のサプライズマーケティング会社、株式会社いないいないばぁのクレドページです。弊社が掲げる行動指針について、面白おかしく紹介しています。">
+<title>クレド|株式会社いないいないばぁ</title>
+<link rel="canonical" href="http://www.i-i-b.jp/credo.php">
 <link rel="apple-touch-icon-precomposed" href="common/img/home-icon.png" />
 <link rel="shortcut icon" href="common/img/favicon.ico" />
 <link rel="stylesheet" href="common/css/style.css" type="text/css" media="all">
@@ -36,24 +36,24 @@
 </head>
 
 
-<body id="credo">
+<body id="company">
 <div id="wrapper">
 <header id="header">
 <div class="pcView"><!-- /PC MENU -->
-<div class="logo"><a href="http://i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="150" height="40"></a></div>
+<div class="logo"><a href="http://www.i-i-b.jp/"><img src="common/img/bnr/logo.png" alt="株式会社いないいないばぁ" width="147" height="50"></a></div>
 <div class="h-sec">
-<h1>いないいないばぁ行動指針 - 株式会社いないいないばぁ</h1>
+<h1>クレド - 株式会社いないいないばぁ</h1>
 <?php @include 'header-nav.php'; ?>
 </div><!-- /h-sec -->
 <ul class="h-sns">
 <li class="snsBlock"><a href="https://www.facebook.com/inai2bar" target="_blank"><span class="icon-">&#xea8d;</span></a></li>
-<li class="snsBlock"><a href="http://twitter.com/share?text=日本一のサプライズマーケティング会社-株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xea92;</span></a></li>
-<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
+<li class="snsBlock"><a href="http://twitter.com/share?text=クレド|株式会社いないいいないばぁ &amp;url=http://www.i-i-b.jp/credo.php" target="_blank"><span class="icon-">&#xea92;</span></a></li>
+<li class="snsBlock"><a href="http://b.hatena.ne.jp/append?http://www.i-i-b.jp/credo.php" target="_blank"><span class="icon-">&#xeaba;</span></a></li>
 </ul><!-- /h-sns -->
 </div><!-- /PC MENU -->
 <div class="spView"><!-- SP MENU -->
 <header id="header-sp" class="spView">
-<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="155" height="38" alt="株式会社いないいないばぁ"/></a></p>
+<p class="Logo"><a href="/"><img src="common/img/bnr/logo.png" width="147" height="50" alt="株式会社いないいないばぁ"/></a></p>
 <?php @include 'header-nav-sp.php'; ?>
 </header>
 </div><!-- /SP MENU -->
@@ -67,14 +67,13 @@
 <div class="breadcrumb">
 <ul>
 <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/" itemprop="url"><span itemprop="title">HOME</span></a></li>
-<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child"><a href="/credo.html" itemprop="url"><span itemprop="title">いないいないばぁ行動指針</span></a></li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child"><a href="/credo.php" itemprop="url"><span itemprop="title">クレド</span></a></li>
 </ul>
 </div><!-- /パンくず -->
 
-
 <div class="Block Top btm-lll">
 <div class="Cont">
-<h2>いないいないばぁ行動指針</h2>
+<h2>いないいないばぁのクレド</h2>
 <p class="catch">CREDO</p>
 </div><!-- /Cont -->
 </div><!-- Block -->
@@ -82,7 +81,7 @@
 <div class="Block">
 <div class="credoList">
 <div class="credoBlock f-r">
-<img src="common/img/credo/01.png" alt="迷ったらワクワクを選ぶ" width="" height="">
+<img src="common/img/credo/01.png" alt="迷ったらワクワクを選ぶ" width="750" height="401">
 </div>
 <div class="credoBlock f-l">
 <p class="credoNumber">CREDO<span>01</span></p>
@@ -98,7 +97,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-l">
-<img src="common/img/credo/02.png" alt="全員がリーダー" width="" height="">
+<img src="common/img/credo/02.png" alt="全員がリーダー" width="750" height="401">
 </div>
 <div class="credoBlock f-r">
 <p class="credoNumber">CREDO<span>02</span></p>
@@ -115,7 +114,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-r">
-<img src="common/img/credo/03.png" alt="社員（なかま）はもうひとつの家族" width="" height="">
+<img src="common/img/credo/03.png" alt="社員（なかま）はもうひとつの家族" width="750" height="401">
 </div>
 <div class="credoBlock f-l">
 <p class="credoNumber">CREDO<span>03</span></p>
@@ -131,7 +130,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-l">
-<img src="common/img/credo/04.png" alt="年に1回は実家に帰り、親孝行をする" width="" height="">
+<img src="common/img/credo/04.png" alt="年に1回は実家に帰り、親孝行をする" width="750" height="401">
 </div>
 <div class="credoBlock f-r">
 <p class="credoNumber">CREDO<span>04</span></p>
@@ -149,7 +148,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-r">
-<img src="common/img/credo/05.png" alt="目指すは日本一幸せになる会社" width="" height="">
+<img src="common/img/credo/05.png" alt="目指すは日本一幸せになる会社" width="750" height="401">
 </div>
 <div class="credoBlock f-l">
 <p class="credoNumber">CREDO<span>05</span></p>
@@ -165,7 +164,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-l">
-<img src="common/img/credo/06.png" alt="世の中の常識を変え、自分の常識を超える" width="" height="">
+<img src="common/img/credo/06.png" alt="世の中の常識を変え、自分の常識を超える" width="750" height="401">
 </div>
 <div class="credoBlock f-r">
 <p class="credoNumber">CREDO<span>06</span></p>
@@ -180,7 +179,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-r">
-<img src="common/img/credo/07.png" alt="365日成長する" width="" height="">
+<img src="common/img/credo/07.png" alt="365日成長する" width="750" height="401">
 </div>
 <div class="credoBlock f-l">
 <p class="credoNumber">CREDO<span>07</span></p>
@@ -196,7 +195,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-l">
-<img src="common/img/credo/08.png" alt="本気の変人を本気で応援する" width="" height="">
+<img src="common/img/credo/08.png" alt="本気の変人を本気で応援する" width="750" height="401">
 </div>
 <div class="credoBlock f-r">
 <p class="credoNumber">CREDO<span>08</span></p>
@@ -213,7 +212,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-r">
-<img src="common/img/credo/09.png" alt="明日、死んでもいい行動をする" width="" height="">
+<img src="common/img/credo/09.png" alt="明日、死んでもいい行動をする" width="750" height="401">
 </div>
 <div class="credoBlock f-l">
 <p class="credoNumber">CREDO<span>09</span></p>
@@ -229,7 +228,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-l">
-<img src="common/img/credo/10.png" alt="まずは自分が楽しめ。満たせ。" width="" height="">
+<img src="common/img/credo/10.png" alt="まずは自分が楽しめ。満たせ。" width="750" height="401">
 </div>
 <div class="credoBlock f-r">
 <p class="credoNumber">CREDO<span>10</span></p>
@@ -245,7 +244,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-r">
-<img src="common/img/credo/11.png" alt="予想を裏切るスピードで" width="" height="">
+<img src="common/img/credo/11.png" alt="予想を裏切るスピードで" width="750" height="401">
 </div>
 <div class="credoBlock f-l">
 <p class="credoNumber">CREDO<span>11</span></p>
@@ -261,7 +260,7 @@
 
 <div class="credoList">
 <div class="credoBlock f-l">
-<img src="common/img/credo/12.png" alt="誇りをもって、一流の仕事をする" width="" height="">
+<img src="common/img/credo/12.png" alt="誇りをもって、一流の仕事をする" width="750" height="401">
 </div>
 <div class="credoBlock f-r">
 <p class="credoNumber">CREDO<span>12</span></p>
@@ -276,10 +275,13 @@
 </div><!-- /credoList12 -->
 </div><!-- Block -->
 
+
 <?php @include 'more.php'; ?>
-<?php @include 'campaign.php'; ?>
+<?php @include 'campaignSec.php'; ?>
+
 </div><!-- /main -->
 </div><!-- /contents -->
+
 <?php @include 'footer.php'; ?>
 </div><!-- /#wrapper -->
 
