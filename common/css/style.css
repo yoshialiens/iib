@@ -51,8 +51,8 @@ section{margin:0 auto;}
 .f-r{float:right;}
 .orange { color:#FF9900;}
 .red, .fc-red {color:#FF0000;}
-.MidNote { margin-bottom:5%;}
-.EndNote { margin-bottom:10%;}
+.MidNote, .midnote { margin-bottom:5%;}
+.EndNote, .endnote { margin-bottom:10%;}
 .bold {font-weight:bold;}
 .btm-s{margin-bottom:10px;}
 .btm{margin-bottom:20px;}
@@ -218,7 +218,7 @@ h4{font-size:18px;}
 
 /* ブログ */
 #blog{}
-#blog #main article{position:relative;width:800px;height:auto;margin:60px auto;}
+#blog #main article{position:relative;width:800px;height:auto;margin:60px auto; font-size:16px;}
 #blog #main article h1{color:#5ac6c8;font-weight:bold;margin:20px auto;letter-spacing:0px;text-align:left;}
 #blog #main article h2{font-size:24px;font-weight:bold;margin:80px auto 20px;letter-spacing:0px;text-align:left;border-bottom:3px solid #666;}
 #blog #main article h3{font-size:20px;font-weight:bold;margin:80px auto 20px;padding-left:6px;letter-spacing:0px;text-align:left;border-left:4px solid #666;}
@@ -242,6 +242,14 @@ h4{font-size:18px;}
 #blog .blog li .blogTitle a{color:#fff;}
 #blog .blog li .blogTitle a:hover{color:#c5c5c5;}
 #blog .blog li .blogEx{color:#eee;}
+#blog .Quote { background:#DBDBDB; padding:2%; -webkit-border-top-left-radius: 15px; -webkit-border-bottom-right-radius: 15px;-moz-border-radius-topleft: 15px;-webkit-border-bottom-right-radius: 15px; margin-bottom:4%;}
+
+
+a .RedBtn {display: inline-block;width: 84%; margin:0 8% 8%;height: 40px;text-align: center;text-decoration: none;line-height: 54px;outline: none;position: relative;background-color:#DE4958;border-radius: 4px;color: #fff;line-height: 42px;-webkit-transition: none;transition: none;box-shadow: 2px 5px 0 2px #CE1C4D;text-shadow: 0 1px 1px rgba(0, 0, 0, .4);}
+a .RedBtn:hover {background-color:#ED4E41;top: 3px;box-shadow: 0 0 0 1px #CE1C4D; cursor:pointer;}
+a .RedBtn:active {top: 3px;box-shadow: 1px 0 0 2px #CE1C4D; cursor:pointer;}
+a .RedBtn .icon- { font-size:90%; vertical-align:middle;}
+
 
 #category #main .catList{overflow:hidden;width:100%;height:auto;margin:0 auto 40px;}
 #category #main .catList ul li{float:left;margin-right:10px;}

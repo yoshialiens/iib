@@ -124,6 +124,7 @@
 <?php foreach($item_all2 as $v2): ?>
 <li>
 <div class="blogImg shake"><div class="blogTag pcView bg<?php echo $v2['category_id']; ?>"><p><?php echo $v2['category_name']; ?></p></div><a href="article.php?item_id=<?php echo $v2['item_id']; ?>"><?php if(!empty($v2['photo1'])){ ?><img src="<?php echo $v2['photo1']; ?>" width="300" height="300" alt="<?php echo $v2['name']; ?>"><?php } ?></a></div>
+<div class="blogDate"><?php echo $v2['posted_date']; ?></div>
 <div class="blogTitle"><a href="article.php?item_id=<?php echo $v2['item_id']; ?>"><?php echo $v2['name']; ?></a></div>
 <div class="blogEx"><p><?php echo $v2['rank_info']; ?></p></div>
 <div class="moreBtn pcView"><a href="article.php?item_id=<?php echo $v2['item_id']; ?>">MORE ＞</a></div>

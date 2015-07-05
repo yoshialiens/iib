@@ -43,6 +43,7 @@
 			'prof'        => @$_POST['prof'],
 			'prof2'       => @$_POST['prof2'],
 			'point'       => @$_POST['point'],
+			'posted_date' => @$_POST['posted_date'],
 		);
 		if($item_id==0){
 			//新規ならレコードを作っておく
@@ -143,6 +144,12 @@
 
 <form method="post" action="reg-item.php?id=<?php echo $item_id; ?>" enctype="multipart/form-data" id="frmReg">
 
+
+
+
+
+
+
 <table class="Reg">
 <tr>
 <th>大カテゴリー名</th>
@@ -155,6 +162,7 @@
 </td>
 </tr>
 </table>
+
 
 <p>カテゴリ・ライターを選択してください。</p>
 <table class="Reg">
@@ -204,8 +212,18 @@ $(document).ready(function(){
 <table class="Reg">
 <tr>
 <th>記事タイトル<br />[name]</th>
+
+
 <td><input type="text" name="name" value="<?php echo @$item['name']; ?>"></td>
 </tr>
+
+
+
+<tr>
+<th>作成日時<br />[posted_name]<br />YYYY-mm-ddの形で入力</th>
+<td><input type="text" name="posted_date" value="<?php echo @$item['posted_date']; ?>"/></td>
+</tr>
+
 
 <!--
 <tr>

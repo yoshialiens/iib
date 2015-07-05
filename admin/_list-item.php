@@ -67,7 +67,7 @@
 <meta charset="utf-8">
 <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><![endif]-->
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-<title>ブログ記事一覧</title>
+<title>口コミ一覧</title>
 
 <link rel="stylesheet" href="common/css/basic.css" type="text/css" media="all">
 </head>
@@ -122,7 +122,6 @@
 <table class="List">
 <tr>
 <th class="Date"><a href="#">登録日</a></th>
-<th class="Date"><a href="#">更新日</a></th>
 <th class="MidName">カテゴリ</th>
 <th class="MidName">記事タイトル</th>
 <th class="AuthorName">ライター</th>
@@ -133,7 +132,6 @@
 
 <?php foreach($item_all as $v){ ?>
 <tr>
-<td><?php echo $v['posted_date']; ?></td>
 <td><?php echo $v['date']; ?></td>
 <td><?php echo $v['category_name']; ?></td>
 <td><?php echo $v['name']; ?></td>
